@@ -1,19 +1,22 @@
-# 🎈 Blank app template
 
-A simple Streamlit app template for you to modify!
+# Vans Data Interactive Dashboard (Enhanced + PDF Export)
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Features
+- Password-protected access (set STREAMLIT_DASH_PASSWORD)
+- Global filters (Company, Age, Employment, Area)
+- KPI strip (Deliveries, Income, Insurance, etc.)
+- PivotTable.js for slicing
+- Preset pivots
+- Interactive Plotly charts
+- 📑 Export to PDF (KPIs + charts)
 
-### How to run it on your own machine
+## Run locally
+```bash
+pip install -r requirements.txt
+export STREAMLIT_DASH_PASSWORD="your-password"   # optional
+streamlit run app.py
+```
 
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## Free Hosting
+- **Streamlit Cloud** or **Hugging Face Spaces**
+- Add env var `STREAMLIT_DASH_PASSWORD` for secure access
